@@ -1,1 +1,3 @@
 Sebuah repository untuk arsip dokumen Latihan dan Project Pemrograman Front End Development Web.
+
+File ini untuk sharing coding dan belajar bersama
