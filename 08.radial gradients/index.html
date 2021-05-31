@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radial gradient</title>
+	<style>
+		/*sintaks :
+			backrgound-image: radial-gradient(warna 1, warna 2, dst ...);*/
+		.satu {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+		background-image: 
+		radial-gradient(red 10%, yellow 20% , blue 80%);
+		}
+
+		/*sintaks lengkap:
+		background-image : radial-gradient(tipe jangkauan at posisi-y posisi-x, warna 1, warna 2, warna-n);*/
+		.dua {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+		background-image:
+		radial-gradient(ellipse, red, blue);
+		}
+
+		/*tipe circle defaultnya adalah ellipse*/
+		.tiga {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+		background-image:
+		radial-gradient(circle, red, blue);
+		}
+
+		/*jangkauan sisi terdekat*/
+		.empat {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+		background-image:
+		radial-gradient(circle closest-side, red, blue);
+		}
+
+		/*jangkauan sisi terjauh*/
+		.lima {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+		background-image:
+		radial-gradient(circle farthest-side, red, blue);
+		}
+
+		/*posisi */
+		.enam {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+		background-image:
+		radial-gradient(circle farthest-side at top left, red, blue);
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div class="satu"></div>
+<div class="dua"></div>
+<div class="tiga"></div>
+<div class="empat"></div>
+<div class="lima"></div>
+<div class="enam"></div>
+
+</body>
+</html>

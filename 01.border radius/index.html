@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Border Radius</title>
+	<style>
+		.satu {
+			width: 300px;
+			height: 300px;
+			background-color: salmon;
+			/*memberi radius pada kotak*/
+			/*ditulis 150 dari 300 utk membuat lingkaran atau dpt ditulis 50%*/
+			border-radius: 150px;
+			text-align: center;
+			/*membuat tulisan di tengah menyamakan heighnya*/
+			line-height: 300px;
+		}
+
+		.dua {
+			width: 300px;
+			height: 300px;
+			background-color: skyblue;
+			/*membuat lingkaran pada pojok kanan atas*/
+			border-top-right-radius: 50%;
+			/*membuat lingkaran pada pojok kiri bawah*/
+			border-bottom-left-radius: 50%;	
+			/*atau kedua text tsb dpt ditulis sbb:*/
+			/*border-radius: 0 50% 0 50%;*/
+
+			text-align: center;
+			line-height: 300px;
+		}
+
+		.tiga {
+			width: 300px;
+			height: 300px;
+			color: white;
+			font-size: 100px;
+			background-color: maroon;
+			/*membuat background img utk div ini*/
+			background-image: url(hero.jpg);
+			/*supaya gambar cuma satu*/
+			background-repeat: no-repeat;
+			/*supaya gambar full*/
+			background-size: cover;
+			border-radius: 0 50% 50% 50%;
+			text-align: center;
+			line-height: 300px; 
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="satu">hello duniaa</div>
+	<div class="dua">hiiii</div>
+	<div class="tiga">uuuy</div>
+
+</body>
+</html>
