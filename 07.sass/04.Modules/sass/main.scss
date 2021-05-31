@@ -1,0 +1,6 @@
+// penggunaan import tidak disarankan utk pemakaian file css yg banyak karena sifatnya yg global
+// disarankan pakai use,tetapi kekurangan use hanya bisa dipakai dart sass yaitu sass yg di instal sendiri ke windows bukan ke vs code
+@import "modules/mixin";
+@import "modules/header";
+@import "modules/container";
+@import "modules/footer";
