@@ -1,0 +1,72 @@
+<!-- Transition -->
+<!-- digunakan untuk mengubah nilai property HTML secar halus -->
+<!-- bedanya dengan animasi,kalau transisi cuma satu adegan, awal dam akhir -->
+<!-- sintaks:
+ transition: [property] <durasi> [timing-function] [delay]; -->
+
+
+ <!-- fungsi transisi.timing function -->
+ <!-- yaitu pergerakkan apa yang akan dipakasi saat transisi -->
+ <!-- timing fungction :
+  ease(default)
+  ease-in
+  ease-out
+  ease-in-out
+  linear
+  cubic-bezier(w,x,y,z)		-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition 2(fungsi)</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 900px;
+			margin: 10px auto;
+			border: 5px solid black;
+		}
+
+		.kotak {
+			width: 100px;
+			height: 100px;
+			background-color: salmon;
+			text-align: center;
+			line-height: 100px;
+			margin: 5px 0;
+				}
+
+	/*waktu pertama adalah lama transisi, waktu kedua adalah delay waktu mulai*/
+							/*3s		,	 1s*/
+		.kotak1 {transition: all 3s 1s ease;}
+		.kotak2 {transition: all 3s ease-in;}
+		.kotak3 {transition: all 3s ease-out;}	
+		.kotak4 {transition: all 3s ease-in-out;}	
+		.kotak5 {transition: all 3s linear;}
+		/*khusus yg ini pakai bantuan inspek elemen kita atur2 animasinya baru
+		di copy angkanya*/
+		.kotak6 {transition: all 3s cubic-bezier(0.24, -0.35, 0.78, 1.46);}			
+
+		.container:hover .kotak {
+			/*diberi transition supaya pergerakanya terlihat karna 180derajat*/
+			transform: rotate(720deg);
+			margin-left: 800px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="kotak kotak1">ease</div>
+		<div class="kotak kotak2">ease-in</div>
+		<div class="kotak kotak3">ease-out</div>
+		<div class="kotak kotak4">ease-in-out</div>
+		<div class="kotak kotak5">linear</div>
+		<div class="kotak kotak6">cubic</div>
+	</div>
+</body>
+</html>

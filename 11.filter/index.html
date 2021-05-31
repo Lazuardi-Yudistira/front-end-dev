@@ -1,0 +1,38 @@
+<!-- sintaknya:
+filter: <tipe-filter>; -->	
+<!-- macam2 filter :
+blur	grayscale	invert
+brightness	sepia	opacity
+contrast	hue-rotate	drop-shadow
+saturate
+ -->
+
+<!-- referensi property filter:
+http://html5-demos.appspot.com/static/css/filters/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filter</title>
+	<style>
+		body {
+			text-align: center;
+			}
+			img {
+			filter: sepia(100%) blur(5px);
+			transition: 1s;
+			}
+			img:hover {
+			filter: sepia(0) blur(0);
+			}
+			
+						
+	</style>
+</head>
+<body>
+
+	<img src="hero.jpg" alt="itemmm">
+
+
+</body>
+</html>

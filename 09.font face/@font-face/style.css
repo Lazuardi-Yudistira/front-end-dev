@@ -1,0 +1,18 @@
+/*sintaks lengkap*/
+/*menggunakan banyak format untuk mendukung beberpa browser
+agar font bisa tampil*/
+@font-face {
+	font-family: 'namaFontBaru';
+	src: url('lokasi/file/fontBaru.eot');
+	src : url('lokasi/file/fontBaru.eot?#iefix') format('embedded-opentype'),
+		  url('lokasi/file/fontBaru.woff2') format('woff2'),
+		  url('lokasi/file/fontBaru.woff') format('woff'),
+		  url('lokasi/file/fontBaru.ttf') format('truetype'),
+		  url('lokasi/file/fontBaru.svg#svgFontName') format('svg');
+}
+
+h1 {
+	font-size: 100px;
+	text-align: center;
+	font-family: 'namaFontBaru', arial;
+}
