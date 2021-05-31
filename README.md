@@ -1,5 +1,5 @@
 # front-end-dev resolusi
-Resosulis belajar front end dev
+Resolusi belajar front end dev
 
 1.html
 2.css
