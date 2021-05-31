@@ -1,0 +1,7 @@
+body {
+	font-family: arial;
+	color: darkgrey;
+}
+
+/*ubah warna di link mengikuti parentnya, warna sesuai yg ada di body*/
+a { color:inherit; }

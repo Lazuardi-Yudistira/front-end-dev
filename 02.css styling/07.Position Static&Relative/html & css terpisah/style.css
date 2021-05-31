@@ -1,0 +1,17 @@
+div {
+			width: 200px;
+			height: 200px;
+		}
+		.satu {
+			background-color:  lightgreen;
+		}
+		.dua {
+			background-color: violet;
+			/*pakai position biar kotak lainnya ga ikut ke geser*/
+			position: relative;
+			top: 30px;
+			left: 50px;
+		}
+		.tiga {
+			background-color: gold;
+		}

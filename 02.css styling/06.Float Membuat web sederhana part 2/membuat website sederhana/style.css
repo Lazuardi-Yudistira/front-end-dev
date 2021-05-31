@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Style*/
+body {
+	font: 16px/28px arial, sans-serif;
+	background-color: #eaeaea;
+	background-image: url(img/bg2.jpg);
+	color: #333;
+}
+
+/*memberi style pada container*/
+.container {
+	width: 960px;
+	margin: auto;
+	background-color: #fff;
+}
+
+/*memberi style pada header*/
+.header {
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+/*memberi style pada judul*/
+.header .judul {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/*membuat link home,about dll menjadi
+horizontal*/
+.header ul li {
+	display: inline-block;
+	/*dan membuat style pada li*/
+	margin-top: 20px;
+	margin-right: 10px;
+
+
+}
+
+/*merubah warna link*/
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 3px;
+}
+
+/*pseudo class membuat sorotan saat
+link diarahkan*/
+.header a:hover {
+	background-color: lightskyblue;
+	color: white;
+
+}
+
+/*menaruh gambar pada bagian hero image*/
+.hero {
+	height: 320px;
+	background-image: url(img/heros.png);
+	background-size: cover;
+	background-position: 0 -230px;
+	border-top: 5px solid	salmon;
+	border-bottom: 5px solid lightskyblue;
+
+}
+
+/*membuat jarak pada bagian conten*/
+.main {
+	width: 600px;
+	padding: 20px;
+	/*supaya lebarnya tetap 600px
+	pakai border box*/
+	box-sizing: border-box;
+	/*kalau float element yg membungkusnya akan colapse
+	,elemen atasnya dianggap tdk ada
+	maka atasi dgn coding clearfix*/
+	float: left;
+}
+
+	/*membuat style pada h2*/
+	.main h2 {
+	font-size: 32px;
+	font-weight: bold;
+	}
+
+	/*membuat style pada penulis*/
+	.main .penulis {
+		font-size: 11px;
+	margin-top: -5px;
+	}
+
+	/*membuat style pada link di a*/
+	.main .penulis a {
+	color: salmon;
+	/*menghilangkan underline pada a*/
+	text-decoration: none;
+	} 
+
+
+	/*membuat jarak antar paragraf
+	dan ukuran huruf*/
+	.main p {
+	margin-bottom: 20px;
+	font-size: 14px;
+	}
+
+/*memberi style pada sidebar*/
+.sidebar {
+	width: 300px;
+	/*supaya tetap di kanan(mengambang)
+	diberi float right*/
+	float: right;
+	padding: 20px;
+	}
+
+	/*memberi style pada h3 didalam sidebar*/
+	.sidebar h3 {
+	font-weight: bold;
+	color: #666;
+	}
+
+
+	/*memberi style pada gambar didalam sidebar*/
+	.sidebar img {
+	width: 70px;
+	height: 70px;
+	/*supaya gambar dikiri dan text mengelilingi gambar(text wrapping)
+	maka gunakan float left pada gambar*/
+	float: left;
+	/*memberi jarak gambar dengan text*/
+	padding: 10px;
+	}
+
+	/*memberi style pada paragraf didalam sidebar*/
+	.sidebar p {
+	font: 12px/18px arial;
+	}
+
+
+
+.footer {
+	padding: 10px;
+	background-color: #333;
+}
+
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+/*clearfix 
+utk membersihkan float*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+

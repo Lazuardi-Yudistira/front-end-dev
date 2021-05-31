@@ -1,0 +1,25 @@
+/*mencoba menggunakan pseudo class*/
+
+
+/*merubah warna link menjadi orange sblm di klik*/
+.hello:link {
+	color: orange;
+}
+
+/*merubah huruf,ukuran dan warna ketika cursor menyorot link*/
+.hello:hover {
+	font-family: arial;
+	font-size: 20px;
+	color: green;
+}
+
+/*merubah huruf menjadi italic ketika di klik*/
+.hello:active {
+	font-style: italic;
+}
+
+
+/*merubah warna huruf ketika sudah di kunjungi linknya*/
+.hello:visited {
+	color: red;
+}

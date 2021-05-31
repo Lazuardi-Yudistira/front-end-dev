@@ -1,0 +1,40 @@
+.satu {
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	/*membuat margin ke empat sisi
+	menjadi 50px*/
+	margin: 50px;
+}
+.dua {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	/*penulisan 2 angka*/
+	/*25px untuk margin atas,bawah*/
+	/*50px untuk margin kiri,kanan*/
+	margin: 25px 50px;
+	
+}
+ 
+.tiga {
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+	/*25px untuk margin atas bawah*/
+	/*auto untuk margin menyesuaikan
+	lebar browser*/
+	margin: 25px auto;
+
+}
+
+/* contoh penulisan 3 angka
+margin: 30px 50px 40px;
+30 itu atas, 50px itu kiri kanan, 40px itu bawah
+seperti ini juga bisa
+margin: 30px auto 40px; */
+
+/* contoh penulisan 4 angka
+margin : 10px 20px 30px 40px;
+10px(atas) 20px(kanan) 30px(bawah) 40px(kiri)
+atau searah jarum jam dimulai dari atas */

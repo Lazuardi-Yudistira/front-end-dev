@@ -1,0 +1,32 @@
+/*mencari anak pertama (first child) dari li*/
+/*lalu kalau udah nemu tolong ubah warna a menjadi hijau*/
+
+li:first-child a {
+	color: green;
+}
+
+/*mencari anak terahir(last child) dari li*/
+/*lalu kalau udah nemu tolong ubah warna a menjadi orange*/
+li:last-child a {
+	color: orange;
+} 
+
+/*mencari anak kelima (5) dari li*/
+/*lalu kalau udah tolong ubah warna a menjadi ungu*/
+li:nth-child(5) a {
+	color: purple;
+}
+
+/*mencari anak kelipatan 2 (2n) dari li*/
+/*lalu kalau udah tolong ubah warna a menjadi merah*/
+li:nth-child(2n) a {
+	color: red;
+}
+
+/*mencari anak kelipatan 3 yang dimulai dari angka 1 (3n+1) dari li*/
+/*lalu kalau udah tolong ubah warna a menjadi pink*/
+li:nth-child(3n+1) a {
+	color: pink;
+}
+
+

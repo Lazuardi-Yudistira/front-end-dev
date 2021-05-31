@@ -1,0 +1,55 @@
+
+/*warna menjadi merah(tidak di overwrite hijau) karena p1 lebh spesifik 
+daripada p*/
+#p1 { color: red;}
+
+p { color: green;}
+
+
+/*lebih menang warna hijau karena bobotnya(spesifiknya)lebih*/
+
+/*2 element html (ul dan li)
+  0 class
+  1 id 			 (sarapan)
+  0 inline
+  jadi totalnya 0102 (baca dari bawah)*/
+  ul#sarapan li {
+	color: green;
+}
+
+/*0 element html 
+  1 class (favorit)
+  0 id
+  0 inline
+  jadi totalnya 0010*/
+.favorit {
+	color: red;
+}
+
+
+
+-------------------------------------------------------------------
+
+
+
+
+/*lebih menang warna merah karena bobotnya(spesifiknya)lebih*/
+
+/*2 element html (ul dan li)
+  0 class
+  1 id 			 (sarapan)
+  0 inline
+  jadi totalnya 0102*/
+ul#minuman li {
+	color:green;
+}
+
+/*2 element html  (ul dan li)
+  1 class 		  (favorit)
+  1 id 			  (minuman)
+  0 inline
+  jadi totalnya 0112*/
+ul#minuman li.favorit {
+	color: red;
+}
+

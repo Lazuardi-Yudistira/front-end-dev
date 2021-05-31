@@ -1,0 +1,21 @@
+/*belajar mengenal text styling*/
+
+h1	{
+	font-size: 150px;
+	color: #ff0000;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+
+
+p  {
+	text-indent: 100px;
+	text-transform: capitalize;
+	letter-spacing: 10px;	
+}
+
+
+a	{
+	 text-decoration: none;
+}
